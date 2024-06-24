@@ -77,15 +77,17 @@ rosservice call /recovery_behavior/trigger "{}"
   - Trigger of recovery behavior
 
 #### Parameters
-- ~\<name>/<b>hz</b> (int, default: `10`):<br>
-  The rate of cmd_vel publishing
-- ~\<name>/<b>sim_time_samples</b> (int, default: `10`):<br>
-  The number of samples to use when simulating trajectories
-- ~\<name>/<b>vel_samples</b> (int, default: `3`):<br>
-  The number of samples to use when searching for the best linear and rotational velocities
-- ~\<name>/<b>move_time</b> (float, default: `2.0` [s]):<br>
-  The amount of time to backward simulate trajectories in the future
-- ~\<name>/<b>min_vel_x</b> (float, default: `-0.2` [m/s]):<br>
-  The minimum x velocity of the robot
-- ~\<name>/<b>max_vel_theta</b> (float, default: `0.4` [rad/s]):<br>
-  The maximum rotational velocity of the robot
+- Recovery behavior
+  - ~\<name>/<b>hz</b> (int, default: `10`):<br>
+    The rate of cmd_vel publishing
+  - ~\<name>/<b>sim_time_samples</b> (int, default: `10`):<br>
+    The number of samples to use when simulating trajectories
+  - ~\<name>/<b>vel_samples</b> (int, default: `3`):<br>
+    The number of samples to use when searching for the best linear and rotational velocities
+  - ~\<name>/<b>move_time</b> (float, default: `2.0` [s]):<br>
+    The amount of time to backward simulate trajectories in the future
+  - ~\<name>/<b>min_vel_x</b> (float, default: `-0.2` [m/s]):<br>
+    The minimum x velocity of the robot
+  - ~\<name>/<b>max_vel_theta</b> (float, default: `0.4` [rad/s]):<br>
+    The maximum rotational velocity of the robot
+- [Footprint](https://github.com/ToshikiNakamura0412/amr_navigation_utils_ros#parameters)
